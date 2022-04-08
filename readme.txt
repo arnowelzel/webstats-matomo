@@ -1,0 +1,26 @@
+=== Website statistics with Matomo ===
+
+Contributors: awelzel
+Tags: statistics
+Requires at least: 4.0
+Tested up to: 5.9
+Stable tag: 1.1
+Donate link: https://paypal.me/ArnoWelzel
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Integration of statistics provided by Matomo for WordPress.
+
+== Description ==
+
+This plugin allows to use a self hosted Matomo server to get website statistics. When enabled, the neccessary code is added to the footer of the website. There is also a direct link to your Matomo server in the WordPress dashboard.
+
+== Changelog ==
+
+= 1.1 =
+
+* Correct display of visits and views in the dashboard.
+
+= 1.0 =
+
+* Initial release.
