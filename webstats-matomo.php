@@ -3,7 +3,7 @@
 Plugin Name: Website statistics with Matomo
 Plugin URI: 
 Description: Get statistics of your website with Matomo
-Version: 1.1
+Version: 1.2
 Author: Arno Welzel
 Author URI: http://arnowelzel.de
 Text Domain: webstats-matomo
@@ -17,7 +17,7 @@ defined('ABSPATH') or die();
  */
 class WebstatsMatomo
 {
-    const PLUGIN_VERSION = '1.1';
+    const PLUGIN_VERSION = '1.2';
 
     var $enableMatomo;
     var $enableCookie;
@@ -61,7 +61,7 @@ class WebstatsMatomo
     function setupDashboardWidgets() {
         global $wp_meta_boxes;
 
-        wp_add_dashboard_widget('webstats_matomo_dashboard_widget', __('Website statistics with Matomo'), [$this, 'widgetAdminMatomo']);
+        wp_add_dashboard_widget('webstats_matomo_dashboard_widget', __('Website statistics with Matomo', 'webstats-matomo'), [$this, 'widgetAdminMatomo']);
     }
 
     /**
@@ -83,7 +83,7 @@ class WebstatsMatomo
             '<p><a href="%s?idSite=%s" target="_blank">%s</a></p>',
             $this->matomoUrl,
             $this->siteId,
-            __('Go to Matomo for this site')
+            __('Open Matomo for this site', 'webstats-matomo')
         );
 
         if (false !== $stats) {
