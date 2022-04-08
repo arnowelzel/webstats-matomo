@@ -3,7 +3,7 @@
 Plugin Name: Website statistics with Matomo
 Plugin URI: 
 Description: Get statistics of your website with Matomo
-Version: 1.2
+Version: 1.3
 Author: Arno Welzel
 Author URI: http://arnowelzel.de
 Text Domain: webstats-matomo
@@ -76,8 +76,12 @@ class WebstatsMatomo
             $this->siteId,
             $this->authToken
         );
-        $xml = @file_get_contents($url);
-        $stats = @simplexml_load_string($xml);
+        $response = wp_remote_get($url);
+        $xml = wp_remote_retrieve_body($response);
+        $stats = false;
+        if (!empty($xml)) {
+            $stats = @simplexml_load_string($xml);
+        }
 
         echo sprintf(
             '<p><a href="%s?idSite=%s" target="_blank">%s</a></p>',

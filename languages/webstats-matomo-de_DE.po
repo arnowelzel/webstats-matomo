@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Matomo integration\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-06 22:59+0000\n"
-"PO-Revision-Date: 2022-04-06 23:03+0000\n"
+"PO-Revision-Date: 2022-04-08 20:37+0000\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -76,6 +76,10 @@ msgstr "Matomo Site-ID"
 #: webstats-matomo.php:253
 msgid "Matomo URL"
 msgstr "Matomo-URL"
+
+#: webstats-matomo.php:86
+msgid "Open Matomo for this site"
+msgstr "Matomo für diese Website öffnen"
 
 #: webstats-matomo.php:245
 msgid "Options"
