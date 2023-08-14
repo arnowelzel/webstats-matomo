@@ -4,7 +4,7 @@ Contributors: awelzel
 Tags: statistics
 Requires at least: 4.0
 Tested up to: 6.2
-Stable tag: 1.4
+Stable tag: 1.5
 Donate link: https://paypal.me/ArnoWelzel
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,9 +17,13 @@ This plugin allows to use a self hosted Matomo server to get website statistics.
 
 == Changelog ==
 
+= 1.5 =
+
+* Update compatibility information for WordPress.
+
 = 1.4 =
 
-* Update compatibility for WordPress 6.0
+* Update compatibility for WordPress 6.0.
 
 = 1.3 =
 
